@@ -26,3 +26,12 @@ document.getElementById('toggleButton_1').addEventListener('click', function() {
     document.querySelector("header").classList.toggle('medieval-style');
     document.getElementById("toggleButton_1").classList.toggle('medieval-style');
 });
+
+document.getElementById('toggleButton_2').addEventListener('click', function() {
+    document.body.classList.toggle('oriental-style');
+    document.querySelectorAll('.container').forEach(function(container) {
+        container.classList.toggle('oriental-style'); 
+    });
+    document.querySelector("header").classList.toggle('oriental-style');
+    document.getElementById("toggleButton_2").classList.toggle('oriental-style');
+});
