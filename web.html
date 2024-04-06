@@ -22,31 +22,95 @@
 
             <div class="container">
                 <div class="inline-block">
-                    <img src="pcrs/img-1.jpg" alt="Touhou character" title="Touhou Project">
+                    <a href="https://en.wikipedia.org/wiki/Touhou_Project">
+                        <img src="pcrs/img-1.jpg" alt="Touhou character" title="Touhou 
+                        Project"> </a>
                 </div>
                 <div class="inline-block">
-                    <p>Introduction</p>
+                    <p>Добро пожаловать в мир Touhou Project, где мистика встречается 
+                        с увлекательными приключениями и захватывающими персонажами! 
+                        Великолепно воплощая дух этого волшебного мира, Fumo представляет
+                        коллекцию уникальных кукол, которые поклонники Touhou Project могут
+                        обожать и коллекционировать.</p>
+                    <p>Fumo - это не просто игрушки. Это произведения искусства, созданные с 
+                        любовью к миру Touhou и его персонажам. С их невероятной детализацией
+                        и высоким качеством изготовления, куклы Fumo погружают вас в 
+                        волшебную атмосферу Touhou Project, позволяя принять участие в его 
+                        увлекательных историях прямо из вашего дома.</p>
+                    <p>Привнесите кусочек магии Touhou в свою жизнь с коллекцией Fumo. 
+                        Для поклонников Touhou Project это врата в мир фантазии, где вы 
+                        сможете ощутить всё величие этой удивительной вселенной.</p>
                 </div>
-           </div>
+            </div>
 
             <hr>
         </header>
-        <div class="container">
-            <div class="block">
-                <form action="web.html" method="get">
-                    <div role="search">
-                        <label for="search">Поиск товара: </label>
-                        <input type="search" id="search" describedby="search-help" name="to_find">
-                        <div id="search-help">Поиск по id или name<button type="submit" style="margin:5px;">Искать</button></div>
 
-                    </div>
-                </form>
+        <div class="block" id="search">
+            <form action="web.html" method="get">
+                <div role="search">
+                    <label for="search">Поиск товара: </label>
+                    <input type="search" id="search" describedby="search-help" name="to_find">
+                    <div id="search-help">Поиск по id или name<button type="submit" style="margin:5px;">Искать</button></div>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="container" id="goods">
+            
+            <div class="block" id="pros">
+                <table id="table-pros">
+                <caption>Преимущества</caption>
+                    <tr class="header">
+                        <td>Неповторимый дизайн персонажей</td>
+                    </tr>
+                    <tr>
+                        <td class="teader">Fumo предлагает вам уникальные куклы,
+                        каждая из которых воплощает дух и характер своего персонажа из Touhou
+                        Project. Сочетание выразительных лиц, ярких цветов и уникального
+                        стиля делает каждую куклу неповторимой и привлекательной.</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Изысканная детализация</td>
+                    </tr>
+                    <tr>
+                        <td class="teader">Каждая кукла Fumo обладает впечатляющей детализацией, отразив 
+                        аутентичный внешний вид и особенности персонажей Touhou Project.
+                         Невероятные мелкие детали, такие как одежда, аксессуары и 
+                         выражение лица, придают куклам особый шарм и реалистичность.</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Качественные материалы</td>
+                    </tr>
+                    <tr>
+                        <td class="teader">Fumo изготовлены из высококачественных материалов,
+                        обеспечивая прочность и долговечность. Мягкий плюш и качественные
+                        ткани придают куклам приятную на ощупь текстуру, а прочные швы и 
+                        детали обеспечивают долговечность использования.</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Подходят для коллекционирования и декора</td>
+                    </tr>
+                    <tr>
+                        <td class="teader">Эти куклы не только радуют глаз, но и могут 
+                        служить отличным элементом коллекции для истинных поклонников Touhou
+                        Project. Они также идеально подходят для декорирования вашего 
+                        рабочего места, шкафа или комнаты, придавая им уникальный и 
+                        фэнтезийный вид.</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Прекрасный подарок для поклонников мира Touhou</td>
+                    </tr>
+                    <tr>
+                        <td class="teader">Fumo - это отличный подарок для всех, кто любит
+                        Touhou Project. Эти куклы будут приятным сюрпризом для друзей, 
+                        родственников или коллег, которые разделяют ваше увлечение миром
+                        Touhou.</td>
+                    </tr>
+                </table>
             </div>
-            <div class="block">
-                <h2>Описание продукта</h2>
-                <p>Описание вашего продукта здесь.</p>
-            </div>
-            <div class="block">
+            <div class="block" id="examples">
                 <table>
                     <tr>
                         <td><img src="" alt="Описание картинки 1"></td>
@@ -66,11 +130,22 @@
                 </table>
             </div>
         </div>
-        <div class="container">
-            <div class="block">
-                <h2>Контакты</h2>
-                <p>Контактные данные для связи с заказчиком здесь.</p>
-            </div>
+
+        <div class="email-form">
+            <h3>Укажите вашу почту, чтобы мы могли связаться: </h3>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Введите ваш e-mail" required >
+                <button type="submit" class="subscribe-button">Подписаться</button>
+            </form>
         </div>
+
+        <footer>
+            <p>&copy; All rights reserved</p>
+            <adress>
+                <div class="divi">Written by Faust Walnacht.</div>
+                <br>
+                <div class="divi">You can contact at: https://t.me.Hopelock</div>
+            </adress>
+        </footer>
     </body>
 </html>

@@ -13,15 +13,29 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
     }
 .block {
     flex: 1 1 45%;
-    margin: 10px;
-    padding: 20px;
+    margin: 5px;
+    padding: 3px;
     background-color: #e0e0e0;
     border-radius: 5px;
     }
+#pros {
+    width: 50%;
+}
+#search {
+    margin-top: 23px;
+}
+caption {
+    caption-side: top; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+    padding: 10px;
+    font-style:italic;
+}
 .inline-block{
     flex: 1 1 45%;
     border: 3px solid green;
@@ -37,7 +51,7 @@ img {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 3px;
     }
 th, td {
     border: 1px solid #ddd;
@@ -49,4 +63,58 @@ th {
     }
 #another {
     list-style-type: none;
+    color: rgba(166, 17, 6);
+    border: 5px double black;
+    background-color: rgb(9, 9, 98, 0.4);
+}
+
+#goods {
+    flex-direction: column;
+}
+#examples {
+    margin-top: 8px;
+}
+tr {
+    color: rgba(166, 17, 6);
+    border: 5px double black;
+}
+.header {
+    background-color: rgb(23, 38, 63);
+}
+.teader {
+    background-color: rgb(194, 177, 177);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align:center
+}
+.divi {
+    padding: 2px 9px;
+    margin:1px;
+    display:inline-block
+}
+.email-form {
+    text-align: center;
+}
+.email-form input[type="email"],
+.email-form button {
+    display: block; 
+    margin: 0 auto 8px; 
+    width: 80%; 
+    max-width: 300px;
+}
+.subscribe-button {
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 8px 5px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругляем углы */
+    cursor: pointer; /* Указываем, что это кнопка */
+}
+input::placeholder{
+    color: rgba(166, 17, 6);
+}
+td {
+    border: 5px solid rgba(166, 17, 6);
 }
