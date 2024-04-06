@@ -18,69 +18,21 @@ function updateClocks() {
 setInterval(updateClocks, 1000);
 updateClocks();
 
-
-
-
-var medievalStyleActive = false;
-var orientalStyleActive = false;
 document.getElementById('toggleButton_1').addEventListener('click', function() {
-    medievalStyleActive = !medievalStyleActive; // Инвертируем значение переменной
-    if (orientalStyleActive) {
-        removeOrientalStyle(); 
-    }
-
-    if (medievalStyleActive) {
-        addMedievalStyle(); // Добавляем стиль, если переменная true
-    } else {
-        removeMedievalStyle(); // Удаляем стиль, если переменная false
-    }
+    document.body.classList.toggle('medieval-style');
+    document.querySelectorAll('.container').forEach(function(container) {
+        container.classList.toggle('medieval-style'); 
+    });
+    document.querySelector("header").classList.toggle('medieval-style');
+    document.getElementById("toggleButton_1").classList.toggle('medieval-style');
 });
 
 document.getElementById('toggleButton_2').addEventListener('click', function() {
-    orientalStyleActive = !orientalStyleActive; // Инвертируем значение переменной
-    if (medievalStyleActive) {
-        removeMedievalStyle(); 
-    }
-
-    if (orientalStyleActive) {
-        addOrientalStyle(); // Добавляем стиль, если переменная true
-    } else {
-        removeOrientalStyle(); // Удаляем стиль, если переменная false
-    }
+    document.body.classList.toggle('oriental-style');
+    document.querySelectorAll('.container').forEach(function(container) {
+        container.classList.toggle('oriental-style'); 
+    });
+    document.querySelector("header").classList.toggle('oriental-style');
+    document.getElementById("toggleButton_2").classList.toggle('oriental-style');
 });
 
-function addMedievalStyle() {
-    document.body.classList.add('medieval-style'); // Добавляем класс Medieval
-    var containers = document.querySelectorAll('.container');
-    containers.forEach(function(container) {
-        container.classList.add('medieval-style'); // Добавляем класс к каждому контейнеру
-    });
-    document.querySelector("header").classList.toggle('medieval-style');
-}
-
-function removeMedievalStyle() {
-    document.body.classList.remove('medieval-style'); // Удаляем класс Medieval
-    var containers = document.querySelectorAll('.container');
-    containers.forEach(function(container) {
-        container.classList.remove('medieval-style'); // Удаляем класс у каждого контейнера
-    });
-    document.querySelector("header").classList.toggle('medieval-style');
-}
-
-function addOrientalStyle() {
-    document.body.classList.add('oriental-style'); // Добавляем класс Medieval
-    var containers = document.querySelectorAll('.container');
-    containers.forEach(function(container) {
-        container.classList.add('oriental-style'); // Добавляем класс к каждому контейнеру
-    });
-    document.querySelector("header").classList.toggle('oriental-style');
-}
-
-function removeOrientalStyle() {
-    document.body.classList.remove('oriental-style'); // Удаляем класс Medieval
-    var containers = document.querySelectorAll('.container');
-    containers.forEach(function(container) {
-        container.classList.remove('oriental-style'); // Удаляем класс у каждого контейнера
-    });
-    document.querySelector("header").classList.toggle('oriental-style');
-}
