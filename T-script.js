@@ -20,8 +20,10 @@ for (let year = 1; year <= totalYears; year++) {
   for (let week = 1; week <= weeksInYear; week++) {
     const cell = row.insertCell();
     cell.addEventListener('click', () => {
-      highlightCells(row.rowIndex, cell.cellIndex);
-    });
+      if (!cell.classList.contains('selected')){
+      highlightCells(row.rowIndex, cell.cellIndex);}
+      else {clearSelection();}
+    }); 
   }
 }
 
