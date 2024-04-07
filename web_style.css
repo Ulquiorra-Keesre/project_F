@@ -121,6 +121,7 @@ footer{
 }
 input::placeholder{
     color: rgba(166, 17, 6);
+    text-align: center;
 }
 td {
     border: 5px solid rgba(166, 17, 6);
@@ -212,3 +213,8 @@ body.oriental-style, .container.oriental-style, header.oriental-style {
     border: none;
     cursor: pointer; 
 }
+a:active, a:hover {
+    color: yellow;
+    background-color:red;
+    text-decoration: underline;
+  }
