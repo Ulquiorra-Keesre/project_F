@@ -22,7 +22,7 @@ header {
     color:black;
     font-family: Yu Gothic UI Semibold;
     }
-.block {
+.container__description {
     flex: 1 1 45%;
     margin: 5px;
     padding: 3px;
@@ -43,7 +43,7 @@ caption {
     padding: 10px;
     font-style:italic;
 }
-.inline-block{
+.container__el{
     flex: 1 1 45%;
     border: 3px solid green;
     border-collapse:collapse;
@@ -85,10 +85,10 @@ tr {
     color: rgba(166, 17, 6);
     border: 5px double black;
 }
-.header {
+.container__header {
     background-color: rgb(23, 38, 63);
 }
-.teader {
+.container__data {
     background-color: rgb(194, 177, 177);
 }
 footer{
@@ -111,7 +111,7 @@ footer{
     width: 80%; 
     max-width: 300px;
 }
-.subscribe-button {
+.email-form__button {
     background-color: #007bff; 
     color: white; 
     padding: 8px 5px; 
